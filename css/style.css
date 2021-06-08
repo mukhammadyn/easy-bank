@@ -28,6 +28,7 @@
 
 :root {
   --font-color: #9597A5;
+  --hover-color: #30C88F;
   --btn-color: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
   --footer-bg: #2D314D;
   --footer-font: #fff;
@@ -322,4 +323,135 @@ img {
   padding: 0;
   font-size: 16px;
   line-height: 26px;
+}
+
+/* LATEST SECTION */
+
+.latest-section {
+  padding-top: 80px;
+  padding-bottom: 104px;
+  background-color: #fafafa;
+}
+
+.latest-section__list {
+  display: flex;
+  margin: 40px 0 0 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.latest-section__item {
+  max-width: 255px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.latest-section__item--wrap {
+  padding: 25px;
+}
+
+.latest-section__item--text {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  line-height: 18px;  
+}
+
+.latest-section__item--heading {
+  margin: 8px 0 0 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: var(--font-color);
+  transition: color 0.3s ease;
+}
+
+.latest-section__item--heading:hover {
+  color: var(--hover-color);
+}
+
+.latest-section__item--desc {
+  margin: 8px 0 0 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.site-footer {
+  padding-top: 49px;
+  padding-bottom: 49px;
+  background-color: var(--footer-bg);
+}
+
+.site-footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer__logo-social {
+  margin-right: auto;
+}
+
+.site-footer__socials {
+  display: flex;
+  align-items: center;
+  margin: 55px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__social {
+  margin-right: 14px;
+}
+
+.site-footer__social--link {
+  color: var(--footer-font);
+  transition: color 0.3s ease;
+}
+
+.site-footer__social--link:hover {
+  color: var(--hover-color);
+}
+
+.site-footer__navs {
+  margin: 0;
+  margin-right: 120px;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__nav {
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.site-footer__link {
+  font-size: 15px;
+  line-height: 26px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-footer__link:hover {
+  color: var(--hover-color);
+}
+
+.site-footer__btn-copied {
+  margin-left: auto;
+}
+
+.site-footer__button {
+  margin-bottom: 24px;
+  margin-left: 65px;
+}
+
+.site-footer__copied {
+  margin: 0;
+  padding: 0;
 }
